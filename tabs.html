@@ -6,10 +6,10 @@
     <title>Title</title>
     <link type="text/css" rel="stylesheet" href="style.css">
 </head>
-<<<<<<< HEAD
+<body>
 <header>
         <h1>Becode Kroegentocht</h1>
-<div class="slideshow-container">
+        <div class="slideshow-container">
 
    
         <div class="mySlides fade">
@@ -29,27 +29,10 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
       <br>
-=======
-<body>
-  <header>
-    <h1>Becode Kroegentocht</h1>
-    <div class="photos">
-        <div id="foto1">
-            <img src="images/kroegentocht-1"     alt="Foto feestje 1">
-        </div>
-        <div id="foto2">
-          <img src="images/kroegentocht-2.jpg" alt="Foto feestje 2">
-        </div>
-        <div id="foto3">
-          <img src="images/kroegentocht-3.jpg" alt="Foto feestje 3">
-        </div>
-      <div id="buttons">
-        <button id="leftButton" onclick="plusDivs(-1)">&#10094;</button>
-        <button id="rightButton" onclick="plusDivs(+1)">&#10095;</button>
-      </div>
-    </div>
->>>>>>> 20f66f646263babaa420bbd94103e3ff618f8dd8
-  </header>
+
+</header>
+
+<div class="tabarea">
 <div class="tab">
     <button onclick="myFunctionone()">Summary</button>
     <button onclick="myFunctiontwo()">Practical info</button>
@@ -67,9 +50,19 @@
 
 <div id="contact" class="tabcontent">
     <h2>Contact us</h2>
-    <p>contact form placeholder</p>
+    <form action="mailto:someone@example.com" method="post" id="usrform" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="name"><br>
+        E-mail:<br>
+        <input type="text" name="mail"><br>
+        Comment:<br>
+        <textarea name="comment" form="usrform">Enter text here...</textarea><br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>
 </div>
-<script type="text/javascript" src="script.js"></script>
+</div>
+    <script type="text/javascript" src="script.js"></script>
 <footer>
     <div id="number">
         <p><strong>{{numberPeopleAttending}}</strong> personen <em>+</em> 2 bakken bier <em>=</em> <strong>Feest</strong></p>
