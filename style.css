@@ -1,5 +1,7 @@
 body {
     background-color: antiquewhite;
+    width: 90%;
+    margin-left: 5%;
 }
 
 .tab {
@@ -34,11 +36,8 @@ body {
 }
 
 header{
-box-sizing:border-box
-}
-
-header{
-    position: relative;
+    box-sizing:border-box
+    position: center;
     float: left;
     width: 1024px;
     height: 576px;
@@ -46,6 +45,7 @@ header{
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
 }
 
 /* Slideshow container */
@@ -154,7 +154,6 @@ footer{
     color: red;
     position: fixed;
     bottom: 0;
-    right: 0;
     display: block;
     width: 500px;
 }
