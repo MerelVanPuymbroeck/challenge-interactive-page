@@ -25,31 +25,28 @@ function myFunctionone() {
     }
   }
 
-  var slideIndex = 1;
-showSlides(slideIndex);
+  var slideIndex = 0;
+showSlides1();
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
+function showSlides1() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
+    slides[i].style.display = "none"; 
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
   slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides1, 3000);
 }
+
+$('.vcheck').change(function() {
+  var name = $('#Name').val();
+  var email = $('#Email').val();
+  var phone = $('#Phone').val();
+  if ( name == '' || email == '' || phone == '') {
+      $('#submit').attr('disabled', 'disabled');
+  } else {
+      $('#submit').removeAttr('disabled');
+  }
+});;
