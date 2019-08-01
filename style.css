@@ -1,3 +1,7 @@
+body {
+    background-color: antiquewhite;
+}
+
 .tab {
     overflow: hidden;
     border: 1px solid darkcyan;
@@ -57,7 +61,7 @@ header .mySlides {
 }
 
 /* Next & previous buttons */
- header.prev, .next {
+ header .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
