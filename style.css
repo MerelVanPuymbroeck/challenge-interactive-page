@@ -39,3 +39,13 @@ header img{
     background-repeat: no-repeat;
     background-size: cover;
 }
+footer{
+    background-color: blue;
+    color: red;
+    position: fixed;
+    bottom: 0;
+    display: block;
+}
+footer strong{
+
+}
